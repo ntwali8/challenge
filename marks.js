@@ -33,11 +33,11 @@ for (let i = 1; i <= studentLength; i++) {
   console.log("Let's enter subject marks now");
   var marksList = [];
   for (let i = 0; i < subjectTitle.length; i++) {
-    let subjectMarks = parseInt(
-      prompt(`Enter ${subjectTitle[i]} marks for ${studentName} : `)
+    let subjectMarks = prompt(
+      `Enter ${subjectTitle[i]} marks for ${studentName} : `
     );
     // check for valid marks
-    if (!isNaN(subjectMarks) && subLength < 101) {
+    if (!isNaN(parseInt(subjectMarks)) && subLength < 101) {
       marks = {
         name: subjectTitle[i],
         marks: subjectMarks,
